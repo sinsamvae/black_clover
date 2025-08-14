@@ -1,0 +1,320 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "menubook.png",
+          "use1Xscale": true,
+          "x": 78,
+          "y": 26,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "info.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "OpenMenuOnKeyPressed"
+          },
+          "x": 132,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stat.png",
+          "use1Xscale": true,
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank1",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open2"
+          },
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "teams.png",
+          "use1Xscale": true,
+          "x": 240,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank3",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open4"
+          },
+          "x": 240,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skills.png",
+          "use1Xscale": true,
+          "x": 204,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank4",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open3"
+          },
+          "x": 204,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armory.png",
+          "use1Xscale": true,
+          "x": 276,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank2",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open5"
+          },
+          "x": 276,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blankhold.png",
+          "use1Xscale": false,
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add",
+          "image": "add.png",
+          "hoveredImage": "addhold.png",
+          "onClick": {
+            "name": "AddHealth"
+          },
+          "x": 105,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_level",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add1",
+          "image": "add.png",
+          "hoveredImage": "addhold.png",
+          "onClick": {
+            "name": "AddStrengh"
+          },
+          "x": 105,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_health",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHealth"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_strengh",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnStrengh"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 93,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add2",
+          "image": "add.png",
+          "hoveredImage": "addhold.png",
+          "onClick": {
+            "name": "AddSta"
+          },
+          "x": 105,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_endurance",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnEndurance"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 121,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add3",
+          "image": "add.png",
+          "hoveredImage": "addhold.png",
+          "onClick": {
+            "name": "AddIntel"
+          },
+          "x": 105,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_endurance1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_intel",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnIntel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 148,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 5,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

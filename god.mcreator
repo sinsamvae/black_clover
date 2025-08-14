@@ -1,0 +1,1842 @@
+{
+  "mod_elements": [
+    {
+      "name": "Menu1",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/network/Menu1ButtonMessage.java",
+          "src/main/java/net/mcreator/god/world/inventory/Menu1Menu.java",
+          "src/main/java/net/mcreator/god/client/gui/Menu1Screen.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnRace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_race",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "OpenMenuOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_menu_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/OpenMenuOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Model",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "model",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnStatus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_status",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnStatusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnMA",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ma",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnMAProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "LOPTU",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loptu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/LOPTUProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "LevelUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/LevelUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "ReturnXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_xp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "EntityDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/EntityDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "ReturnHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_health",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "AddHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/AddHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "ReturnStrengh",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_strengh",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnStrenghProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnGP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_gp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnGPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnEndurance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_endurance",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnEnduranceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnSP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_sp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnSPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Open2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/Open2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Rhealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rhealth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RhealthProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "GEts",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "g_ets",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/GEtsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Rbar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RbarProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Level",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Spawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/SpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "AddStrengh",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_strengh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/AddStrenghProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "LevelUpParticles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up_particles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/god/particles/level_up_particles.json",
+          "src/main/java/net/mcreator/god/client/particle/LevelUpParticlesParticle.java"
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Open3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/Open3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Open4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/Open4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Open5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/Open5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Menu2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/world/inventory/Menu2Menu.java",
+          "src/main/java/net/mcreator/god/client/gui/Menu2Screen.java",
+          "src/main/java/net/mcreator/god/network/Menu2ButtonMessage.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Menu3",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/world/inventory/Menu3Menu.java",
+          "src/main/java/net/mcreator/god/client/gui/Menu3Screen.java",
+          "src/main/java/net/mcreator/god/network/Menu3ButtonMessage.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Menu4",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/network/Menu4ButtonMessage.java",
+          "src/main/java/net/mcreator/god/client/gui/Menu4Screen.java",
+          "src/main/java/net/mcreator/god/world/inventory/Menu4Menu.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Menu5",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/client/gui/Menu5Screen.java",
+          "src/main/java/net/mcreator/god/world/inventory/Menu5Menu.java",
+          "src/main/java/net/mcreator/god/network/Menu5ButtonMessage.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "ReturnKIngdom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_k_ingdom",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnKIngdomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Kings",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/world/inventory/KingsMenu.java",
+          "src/main/java/net/mcreator/god/network/KingsButtonMessage.java",
+          "src/main/java/net/mcreator/god/client/gui/KingsScreen.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "KINGH",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingh",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/KINGHProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "KINGSS",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingss",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/KINGSSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "KINGC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingc",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/KINGCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "KINGD",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingd",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/KINGDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "KINGDOMSELECT",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingdomselect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/KINGDOMSELECTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Right",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Left",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/LeftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Rclovs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rclovs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RclovsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "RCircle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RCircleProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "SwitchSlots",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_slots",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/SwitchSlotsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "Itemstack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "itemstack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ItemstackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "Menu7",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/world/inventory/Menu7Menu.java",
+          "src/main/java/net/mcreator/god/client/gui/Menu7Screen.java",
+          "src/main/java/net/mcreator/god/network/Menu7ButtonMessage.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "SetSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/SetSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "Open7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/Open7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "WindSlashWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_slash_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/WindSlashWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills/Wind"
+    },
+    {
+      "name": "WindSlash",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_slash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/entity/WindSlashEntity.java",
+          "src/main/java/net/mcreator/god/client/renderer/WindSlashRenderer.java"
+        ]
+      },
+      "path": "~/Skills/Wind"
+    },
+    {
+      "name": "AddSta",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_sta",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/AddStaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "AddIntel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_intel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/AddIntelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "ReturnIntel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_intel",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnIntelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "RETMOVE",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retmove",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RETMOVEProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "SwitchMoves",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_moves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/network/SwitchMovesMessage.java"
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "Open",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/network/OpenMessage.java"
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Execute",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "execute",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/network/ExecuteMessage.java"
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "ExecuteOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "execute_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ExecuteOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "AbilityDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/AbilityDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "RenderOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RenderOverlayProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "GetFirstSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_first_skill",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/GetFirstSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "WindBird",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_bird",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/entity/WindBirdEntity.java",
+          "src/main/java/net/mcreator/god/client/renderer/WindBirdRenderer.java"
+        ]
+      },
+      "path": "~/Skills/Wind"
+    },
+    {
+      "name": "GetSecondSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_second_skill",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/GetSecondSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SetSecondSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_second_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/SetSecondSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "ManaRegen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ManaRegenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "S2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/S2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "ReturnClass",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_class",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnClassProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Menu"
+    },
+    {
+      "name": "Respawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "respawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Tornado",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/entity/TornadoEntity.java",
+          "src/main/java/net/mcreator/god/client/renderer/TornadoRenderer.java",
+          "src/main/java/net/mcreator/god/entity/model/TornadoModel.java"
+        ]
+      },
+      "path": "~/Skills/Wind"
+    },
+    {
+      "name": "TornadoOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/TornadoOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills/Wind"
+    },
+    {
+      "name": "GetThirdSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_third_skill",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/GetThirdSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SetThirdSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_third_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/SetThirdSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "WindBlade",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/entity/WindBladeEntity.java",
+          "src/main/java/net/mcreator/god/client/renderer/WindBladeRenderer.java"
+        ]
+      },
+      "path": "~/Skills/Wind"
+    },
+    {
+      "name": "GetFourthSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_fourth_skill",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/GetFourthSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SetFourthSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_fourth_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/SetFourthSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "MaxManaRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/MaxManaRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MaxMana",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/item/MaxManaItem.java",
+          "src/main/resources/assets/god/models/item/max_mana.json"
+        ]
+      },
+      "path": "~/Items"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "kingdom",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "mana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "maxmana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "endurance",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "maxendurance",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "race",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"Human\""
+    },
+    {
+      "name": "attribute",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "Wind"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "50.0"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"Healthy\""
+    },
+    {
+      "name": "xp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "strenght",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Health",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MaxHealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "intel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "SELECT",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "move",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "abilityselect",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "joined",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "skilllist",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "magicskillcount",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "raceboostgiven",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SocialClass",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "grimoire",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "invited_to_guild",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "guild_name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "guild_owner_logic",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "guild_itemstack",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "scroll_guild",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "ManaRegenFactor",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "key.god.open": "Open Menu",
+      "gui.god.kings.button_select": "SELECT!",
+      "key.god.execute": "Execute",
+      "gui.god.menu_3.tooltip_spirits": "Spirits",
+      "attribute.god.level": "Level",
+      "entity.god.tornado": "Tornado",
+      "gui.god.menu_2.label_empty": "______",
+      "gui.god.menu_7.button_add": "set",
+      "gui.god.menu_7.button_empty1": "",
+      "item.god.max_mana": "Max Mana",
+      "gui.god.menu_2.label_stats": "Stats",
+      "gui.god.menu_3.tooltip_ki": "Ki",
+      "item.god.tornado_spawn_egg": "Tornado Spawn Egg",
+      "gui.god.menu_3.tooltip_magic": "Magic",
+      "gui.god.menu_3.tooltip_race": "Race ",
+      "gui.god.menu_7.button_empty": "",
+      "key.god.switch_moves": "Switch Moves",
+      "gui.god.menu_3.tooltip_mana_method": "Mana Method",
+      "gui.god.menu_3.tooltip_demons": "Demons"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Menu",
+        "children": []
+      },
+      {
+        "name": "Stats",
+        "children": []
+      },
+      {
+        "name": "Skills",
+        "children": [
+          {
+            "name": "Wind",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "god",
+    "modName": "God",
+    "version": "1.0.0",
+    "author": "samen, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "pehkui",
+      "geckolib",
+      "playeranimator",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.god"
+  },
+  "mcreatorVersion": 202400452410
+}

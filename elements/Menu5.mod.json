@@ -1,0 +1,261 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "menubook.png",
+          "use1Xscale": true,
+          "x": 78,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "info.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "OpenMenuOnKeyPressed"
+          },
+          "x": 132,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stat.png",
+          "use1Xscale": true,
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank1",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open2"
+          },
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "teams.png",
+          "use1Xscale": true,
+          "x": 240,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank3",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open4"
+          },
+          "x": 240,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skills.png",
+          "use1Xscale": true,
+          "x": 204,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank4",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open3"
+          },
+          "x": 204,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armory.png",
+          "use1Xscale": true,
+          "x": 276,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank2",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open5"
+          },
+          "x": 276,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_name",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnName"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_level",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnLevel"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_race",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnRace"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "Model"
+          },
+          "scale": 50,
+          "rotationX": 30,
+          "followMouseMovement": false,
+          "x": 270,
+          "y": 140,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_status",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnStatus"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_xp",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnXP"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blankhold.png",
+          "use1Xscale": false,
+          "x": 276,
+          "y": 197,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

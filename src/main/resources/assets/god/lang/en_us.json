@@ -1,0 +1,21 @@
+{
+  "key.god.open": "Open Menu",
+  "gui.god.kings.button_select": "SELECT!",
+  "key.god.execute": "Execute",
+  "gui.god.menu_3.tooltip_spirits": "Spirits",
+  "attribute.god.level": "Level",
+  "entity.god.tornado": "Tornado",
+  "gui.god.menu_2.label_empty": "______",
+  "gui.god.menu_7.button_add": "set",
+  "gui.god.menu_7.button_empty1": "",
+  "item.god.max_mana": "Max Mana",
+  "gui.god.menu_2.label_stats": "Stats",
+  "gui.god.menu_3.tooltip_ki": "Ki",
+  "item.god.tornado_spawn_egg": "Tornado Spawn Egg",
+  "gui.god.menu_3.tooltip_magic": "Magic",
+  "gui.god.menu_3.tooltip_race": "Race ",
+  "gui.god.menu_7.button_empty": "",
+  "key.god.switch_moves": "Switch Moves",
+  "gui.god.menu_3.tooltip_mana_method": "Mana Method",
+  "gui.god.menu_3.tooltip_demons": "Demons"
+}

@@ -1,0 +1,128 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "kingdoms_menu.png",
+          "use1Xscale": true,
+          "x": 6,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "new_piskel_1.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "KINGH"
+          },
+          "x": 195,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "new_piskel.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "KINGD"
+          },
+          "x": 195,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "new_piskel_3.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "KINGSS"
+          },
+          "x": 195,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "new_piskel_2.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "KINGC"
+          },
+          "x": 195,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_new_piskel_10",
+          "image": "fleche_bleue_gauche_1.png",
+          "hoveredImage": "fleche_blanche_gauche_3_1.png",
+          "onClick": {
+            "name": "Left"
+          },
+          "x": 159,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_new_piskel_11",
+          "image": "fleche_blanche_droite_1.png",
+          "hoveredImage": "fleche_bleue_droite_1.png",
+          "onClick": {
+            "name": "Right"
+          },
+          "x": 231,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "SELECT!",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KINGDOMSELECT"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 180,
+          "y": 124,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

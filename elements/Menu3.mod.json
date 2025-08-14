@@ -1,0 +1,329 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "menubook.png",
+          "use1Xscale": true,
+          "x": 78,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "info.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "OpenMenuOnKeyPressed"
+          },
+          "x": 132,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stat.png",
+          "use1Xscale": true,
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank1",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open2"
+          },
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "teams.png",
+          "use1Xscale": true,
+          "x": 240,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank3",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open4"
+          },
+          "x": 240,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skills.png",
+          "use1Xscale": true,
+          "x": 204,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank4",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open3"
+          },
+          "x": 204,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armory.png",
+          "use1Xscale": true,
+          "x": 276,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank2",
+          "image": "blank.png",
+          "hoveredImage": "blankhold.png",
+          "onClick": {
+            "name": "Open5"
+          },
+          "x": 276,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blankhold.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magic",
+          "image": "demons.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Open7"
+          },
+          "x": 159,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_races",
+          "image": "races.png",
+          "hoveredImage": "",
+          "x": 105,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magic1",
+          "image": "magic.png",
+          "hoveredImage": "",
+          "x": 105,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_spirits",
+          "image": "spirits.png",
+          "hoveredImage": "",
+          "x": 159,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_demons",
+          "text": {
+            "fixedValue": "Demons"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 114,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_race",
+          "text": {
+            "fixedValue": "Race "
+          },
+          "width": 24,
+          "height": 24,
+          "x": 114,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_spirits",
+          "text": {
+            "fixedValue": "Spirits"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 168,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_magic",
+          "text": {
+            "fixedValue": "Magic"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 168,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_method",
+          "image": "method.png",
+          "hoveredImage": "",
+          "x": 105,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_mana_method",
+          "text": {
+            "fixedValue": "Mana Method"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 114,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ki",
+          "image": "ki.png",
+          "hoveredImage": "",
+          "x": 159,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ki",
+          "text": {
+            "fixedValue": "Ki"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 168,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "Model"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 267,
+          "y": 134,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
