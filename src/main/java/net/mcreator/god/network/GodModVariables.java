@@ -106,6 +106,11 @@ public class GodModVariables {
 			clone.guild_owner_logic = original.guild_owner_logic;
 			clone.guild_itemstack = original.guild_itemstack;
 			clone.ManaRegenFactor = original.ManaRegenFactor;
+			clone.skin_color = original.skin_color;
+			clone.eye_color = original.eye_color;
+			clone.mouth = original.mouth;
+			clone.hair = original.hair;
+			clone.hair_color = original.hair_color;
 			if (!event.isWasDeath()) {
 				clone.grimoire = original.grimoire;
 				clone.scroll_guild = original.scroll_guild;
@@ -180,6 +185,11 @@ public class GodModVariables {
 		public ItemStack guild_itemstack = ItemStack.EMPTY;
 		public double scroll_guild = 0;
 		public double ManaRegenFactor = 1.0;
+		public double skin_color = 0;
+		public double eye_color = 0;
+		public double mouth = 0;
+		public double hair = 0;
+		public double hair_color = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -219,6 +229,11 @@ public class GodModVariables {
 			nbt.put("guild_itemstack", guild_itemstack.save(new CompoundTag()));
 			nbt.putDouble("scroll_guild", scroll_guild);
 			nbt.putDouble("ManaRegenFactor", ManaRegenFactor);
+			nbt.putDouble("skin_color", skin_color);
+			nbt.putDouble("eye_color", eye_color);
+			nbt.putDouble("mouth", mouth);
+			nbt.putDouble("hair", hair);
+			nbt.putDouble("hair_color", hair_color);
 			return nbt;
 		}
 
@@ -261,6 +276,11 @@ public class GodModVariables {
 			guild_itemstack = ItemStack.of(nbt.getCompound("guild_itemstack"));
 			scroll_guild = nbt.getDouble("scroll_guild");
 			ManaRegenFactor = nbt.getDouble("ManaRegenFactor");
+			skin_color = nbt.getDouble("skin_color");
+			eye_color = nbt.getDouble("eye_color");
+			mouth = nbt.getDouble("mouth");
+			hair = nbt.getDouble("hair");
+			hair_color = nbt.getDouble("hair_color");
 		}
 	}
 
@@ -325,6 +345,11 @@ public class GodModVariables {
 					variables.guild_itemstack = message.data.guild_itemstack;
 					variables.scroll_guild = message.data.scroll_guild;
 					variables.ManaRegenFactor = message.data.ManaRegenFactor;
+					variables.skin_color = message.data.skin_color;
+					variables.eye_color = message.data.eye_color;
+					variables.mouth = message.data.mouth;
+					variables.hair = message.data.hair;
+					variables.hair_color = message.data.hair_color;
 				}
 			});
 			context.setPacketHandled(true);
