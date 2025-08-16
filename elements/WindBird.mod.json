@@ -15,8 +15,8 @@
     "knockback": 1,
     "entityModel": "ModelHellFire5",
     "customModelTexture": "egletem.png",
-    "modelWidth": 1.0,
-    "modelHeight": 0.6,
+    "modelWidth": 2.0,
+    "modelHeight": 0.4,
     "onFlyingTick": {
       "name": "WindSlashWhileProjectileFlyingTick"
     }

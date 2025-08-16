@@ -15,8 +15,8 @@
     "knockback": 1,
     "entityModel": "Modelblade",
     "customModelTexture": "lame.png",
-    "modelWidth": 1.0,
-    "modelHeight": 0.6,
+    "modelWidth": 0.30000000000000004,
+    "modelHeight": 0.4,
     "onFlyingTick": {
       "name": "WindSlashWhileProjectileFlyingTick"
     }

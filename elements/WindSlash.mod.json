@@ -15,8 +15,8 @@
     "knockback": 1,
     "entityModel": "Modelkamichigiri",
     "customModelTexture": "windslash.png",
-    "modelWidth": 1.0,
-    "modelHeight": 0.6,
+    "modelWidth": 2.0,
+    "modelHeight": 0.4,
     "onFlyingTick": {
       "name": "WindSlashWhileProjectileFlyingTick"
     }

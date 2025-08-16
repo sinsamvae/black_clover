@@ -720,8 +720,8 @@
       "registry_name": "kings",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/world/inventory/KingsMenu.java",
           "src/main/java/net/mcreator/god/network/KingsButtonMessage.java",
+          "src/main/java/net/mcreator/god/world/inventory/KingsMenu.java",
           "src/main/java/net/mcreator/god/client/gui/KingsScreen.java"
         ]
       },
@@ -821,6 +821,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1058,8 +1074,8 @@
       "registry_name": "wind_slash",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/entity/WindSlashEntity.java",
-          "src/main/java/net/mcreator/god/client/renderer/WindSlashRenderer.java"
+          "src/main/java/net/mcreator/god/client/renderer/WindSlashRenderer.java",
+          "src/main/java/net/mcreator/god/entity/WindSlashEntity.java"
         ]
       },
       "path": "~/Skills/Wind"
@@ -1497,8 +1513,8 @@
       "registry_name": "wind_blade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/entity/WindBladeEntity.java",
-          "src/main/java/net/mcreator/god/client/renderer/WindBladeRenderer.java"
+          "src/main/java/net/mcreator/god/client/renderer/WindBladeRenderer.java",
+          "src/main/java/net/mcreator/god/entity/WindBladeEntity.java"
         ]
       },
       "path": "~/Skills/Wind"
@@ -1591,7 +1607,280 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "RaceSelect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_select",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RaceSelectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "RaceLeft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RaceLeftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "RaceRight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RaceRightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "RaceSelection",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_selection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/network/RaceSelectionButtonMessage.java",
+          "src/main/java/net/mcreator/god/client/gui/RaceSelectionScreen.java",
+          "src/main/java/net/mcreator/god/world/inventory/RaceSelectionMenu.java"
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnElf",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_elf",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnElfProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnHuman",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_human",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnHumanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnDevil",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_devil",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnDevilProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnWitch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_witch",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnWitchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnDwarf",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_dwarf",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnDwarfProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "Race",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/RaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnLine1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_line_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnLine1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnLine2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_line_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnLine2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "ReturnRandom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_random",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/ReturnRandomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "Line3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "line_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/Line3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
     }
   ],
   "variable_elements": [
@@ -1629,7 +1918,7 @@
       "name": "race",
       "type": "string",
       "scope": "player_persistent",
-      "value": "\"Human\""
+      "value": "Human"
     },
     {
       "name": "attribute",
@@ -1810,6 +2099,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "race_count",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
     }
   ],
   "sound_elements": [],
@@ -1828,6 +2123,7 @@
       "gui.god.menu_7.button_empty1": "",
       "item.god.max_mana": "Max Mana",
       "gui.god.menu_2.label_stats": "Stats",
+      "gui.god.race_selection.label_start": "START",
       "gui.god.menu_3.tooltip_ki": "Ki",
       "item.god.tornado_spawn_egg": "Tornado Spawn Egg",
       "gui.god.menu_3.tooltip_magic": "Magic",
@@ -1860,6 +2156,10 @@
       },
       {
         "name": "Items",
+        "children": []
+      },
+      {
+        "name": "CharCreation",
         "children": []
       }
     ]

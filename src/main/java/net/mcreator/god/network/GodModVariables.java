@@ -111,6 +111,7 @@ public class GodModVariables {
 			clone.mouth = original.mouth;
 			clone.hair = original.hair;
 			clone.hair_color = original.hair_color;
+			clone.race_count = original.race_count;
 			if (!event.isWasDeath()) {
 				clone.grimoire = original.grimoire;
 				clone.scroll_guild = original.scroll_guild;
@@ -159,7 +160,7 @@ public class GodModVariables {
 		public double maxmana = 100.0;
 		public double endurance = 100.0;
 		public double maxendurance = 100.0;
-		public String race = "\"Human\"";
+		public String race = "Human";
 		public String attribute = "Wind";
 		public String variant = "\"\"";
 		public double level = 50.0;
@@ -190,6 +191,7 @@ public class GodModVariables {
 		public double mouth = 0;
 		public double hair = 0;
 		public double hair_color = 0;
+		public double race_count = 1.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -234,6 +236,7 @@ public class GodModVariables {
 			nbt.putDouble("mouth", mouth);
 			nbt.putDouble("hair", hair);
 			nbt.putDouble("hair_color", hair_color);
+			nbt.putDouble("race_count", race_count);
 			return nbt;
 		}
 
@@ -281,6 +284,7 @@ public class GodModVariables {
 			mouth = nbt.getDouble("mouth");
 			hair = nbt.getDouble("hair");
 			hair_color = nbt.getDouble("hair_color");
+			race_count = nbt.getDouble("race_count");
 		}
 	}
 
@@ -350,6 +354,7 @@ public class GodModVariables {
 					variables.mouth = message.data.mouth;
 					variables.hair = message.data.hair;
 					variables.hair_color = message.data.hair_color;
+					variables.race_count = message.data.race_count;
 				}
 			});
 			context.setPacketHandled(true);

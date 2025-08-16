@@ -1,0 +1,236 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_fleche_blanche_droite_1",
+          "image": "fleche_blanche_droite_1.png",
+          "hoveredImage": "fleche_bleue_droite_1.png",
+          "onClick": {
+            "name": "RaceRight"
+          },
+          "x": 276,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_fleche_bleue_gauche_1",
+          "image": "fleche_bleue_gauche_1.png",
+          "hoveredImage": "fleche_blanche_gauche_3_1.png",
+          "onClick": {
+            "name": "RaceLeft"
+          },
+          "x": 132,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "racessss.png",
+          "use1Xscale": true,
+          "x": 69,
+          "y": 17,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "human.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnHuman"
+          },
+          "x": 202,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnDevil"
+          },
+          "x": 202,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "elf.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnElf"
+          },
+          "x": 201,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "witch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnWitch"
+          },
+          "x": 202,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "dwarf.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnDwarf"
+          },
+          "x": 202,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_race",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnRace"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "random.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnRandom"
+          },
+          "x": 202,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_line_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnLine1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_line_3",
+          "text": {
+            "fixedValue": "",
+            "name": "Line3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_line_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnLine2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slotsmovebutton",
+          "image": "slotsmovebutton.png",
+          "hoveredImage": "smbon.png",
+          "onClick": {
+            "name": "RaceSelect"
+          },
+          "x": 198,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_start",
+          "text": {
+            "fixedValue": "START"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 207,
+          "y": 193,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 16,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
