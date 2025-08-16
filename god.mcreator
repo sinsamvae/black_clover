@@ -1881,6 +1881,64 @@
         ]
       },
       "path": "~/CharCreation"
+    },
+    {
+      "name": "EyesLeft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyes_left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/EyesLeftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "EyesRight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyes_right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/EyesRightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
+    },
+    {
+      "name": "EyesReturn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyes_return",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/EyesReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CharCreation"
     }
   ],
   "variable_elements": [
@@ -2074,34 +2132,40 @@
       "name": "skin_color",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "1.0"
     },
     {
       "name": "eye_color",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "1.0"
     },
     {
       "name": "mouth",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "1.0"
     },
     {
       "name": "hair",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "1.0"
     },
     {
       "name": "hair_color",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "1.0"
     },
     {
       "name": "race_count",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "grimoire_holder",
       "type": "number",
       "scope": "player_persistent",
       "value": "1.0"

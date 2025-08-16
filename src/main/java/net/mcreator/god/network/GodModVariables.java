@@ -112,6 +112,7 @@ public class GodModVariables {
 			clone.hair = original.hair;
 			clone.hair_color = original.hair_color;
 			clone.race_count = original.race_count;
+			clone.grimoire_holder = original.grimoire_holder;
 			if (!event.isWasDeath()) {
 				clone.grimoire = original.grimoire;
 				clone.scroll_guild = original.scroll_guild;
@@ -186,12 +187,13 @@ public class GodModVariables {
 		public ItemStack guild_itemstack = ItemStack.EMPTY;
 		public double scroll_guild = 0;
 		public double ManaRegenFactor = 1.0;
-		public double skin_color = 0;
-		public double eye_color = 0;
-		public double mouth = 0;
-		public double hair = 0;
-		public double hair_color = 0;
+		public double skin_color = 1.0;
+		public double eye_color = 1.0;
+		public double mouth = 1.0;
+		public double hair = 1.0;
+		public double hair_color = 1.0;
 		public double race_count = 1.0;
+		public double grimoire_holder = 1.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -237,6 +239,7 @@ public class GodModVariables {
 			nbt.putDouble("hair", hair);
 			nbt.putDouble("hair_color", hair_color);
 			nbt.putDouble("race_count", race_count);
+			nbt.putDouble("grimoire_holder", grimoire_holder);
 			return nbt;
 		}
 
@@ -285,6 +288,7 @@ public class GodModVariables {
 			hair = nbt.getDouble("hair");
 			hair_color = nbt.getDouble("hair_color");
 			race_count = nbt.getDouble("race_count");
+			grimoire_holder = nbt.getDouble("grimoire_holder");
 		}
 	}
 
@@ -355,6 +359,7 @@ public class GodModVariables {
 					variables.hair = message.data.hair;
 					variables.hair_color = message.data.hair_color;
 					variables.race_count = message.data.race_count;
+					variables.grimoire_holder = message.data.grimoire_holder;
 				}
 			});
 			context.setPacketHandled(true);
