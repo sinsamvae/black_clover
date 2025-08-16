@@ -19,6 +19,7 @@ import net.mcreator.god.client.gui.Menu3Screen;
 import net.mcreator.god.client.gui.Menu2Screen;
 import net.mcreator.god.client.gui.Menu1Screen;
 import net.mcreator.god.client.gui.KingsScreen;
+import net.mcreator.god.client.gui.CharacterCreationScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class GodModScreens {
@@ -33,6 +34,7 @@ public class GodModScreens {
 			MenuScreens.register(GodModMenus.KINGS.get(), KingsScreen::new);
 			MenuScreens.register(GodModMenus.MENU_7.get(), Menu7Screen::new);
 			MenuScreens.register(GodModMenus.RACE_SELECTION.get(), RaceSelectionScreen::new);
+			MenuScreens.register(GodModMenus.CHARACTER_CREATION.get(), CharacterCreationScreen::new);
 		});
 	}
 }

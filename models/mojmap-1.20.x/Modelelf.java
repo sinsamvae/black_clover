@@ -2,11 +2,11 @@
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class Modelelf<T extends Entity> extends EntityModel<T> {
+public class ModelElf<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "kcrplayermodelbasejava"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "elf"),
+			"main");
 	private final ModelPart Body;
 	private final ModelPart Head;
 	private final ModelPart RightArm;
@@ -14,7 +14,7 @@ public class Modelelf<T extends Entity> extends EntityModel<T> {
 	private final ModelPart RightLeg;
 	private final ModelPart LeftLeg;
 
-	public Modelelf(ModelPart root) {
+	public ModelElf(ModelPart root) {
 		this.Body = root.getChild("Body");
 		this.Head = root.getChild("Head");
 		this.RightArm = root.getChild("RightArm");
@@ -36,7 +36,7 @@ public class Modelelf<T extends Entity> extends EntityModel<T> {
 		PartDefinition cube_r1 = Head.addOrReplaceChild("cube_r1",
 				CubeListBuilder.create().texOffs(9, 4).mirror()
 						.addBox(-1.0F, -2.0F, 0.0F, 4.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false),
-				PartPose.offsetAndRotation(4.7F, -2.0F, 0.0F, 0.2738F, -0.5205F, -0.6805F));
+				PartPose.offsetAndRotation(5.1013F, -2.6984F, 0.2277F, 0.3631F, -0.4657F, -0.8687F));
 
 		PartDefinition cube_r2 = Head.addOrReplaceChild("cube_r2",
 				CubeListBuilder.create().texOffs(13, 4).mirror()
@@ -51,7 +51,7 @@ public class Modelelf<T extends Entity> extends EntityModel<T> {
 		PartDefinition cube_r4 = Head.addOrReplaceChild("cube_r4",
 				CubeListBuilder.create().texOffs(10, 2).addBox(-3.0F, -2.0F, 0.0F, 4.0F, 1.0F, 1.0F,
 						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(-4.7F, -2.0F, 0.0F, 0.2738F, 0.5205F, 0.6805F));
+				PartPose.offsetAndRotation(-5.1013F, -2.6984F, 0.2277F, 0.3631F, 0.4657F, 0.8687F));
 
 		PartDefinition RightArm = partdefinition.addOrReplaceChild("RightArm", CubeListBuilder.create().texOffs(40, 16)
 				.addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)),

@@ -1,0 +1,184 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "menu1.png",
+          "use1Xscale": true,
+          "x": 69,
+          "y": 26,
+          "locked": true
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "Model"
+          },
+          "scale": 45,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 204,
+          "y": 116,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_eyes_return",
+          "text": {
+            "fixedValue": "",
+            "name": "EyesReturn"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 104,
+          "y": 58,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_mini_left_white",
+          "image": "mini_left_white.png",
+          "hoveredImage": "mini_left_blue.png",
+          "onClick": {
+            "name": "EyesLeft"
+          },
+          "x": 87,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_mini_white_right",
+          "image": "mini_white_right.png",
+          "hoveredImage": "mini_blue_right.png",
+          "onClick": {
+            "name": "EyesRight"
+          },
+          "x": 123,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_eyes",
+          "text": {
+            "fixedValue": "Eyes"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skin",
+          "text": {
+            "fixedValue": "Skin"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skin_return",
+          "text": {
+            "fixedValue": "",
+            "name": "SkinReturn"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 104,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_mini_left_white1",
+          "image": "mini_left_white.png",
+          "hoveredImage": "mini_left_blue.png",
+          "onClick": {
+            "name": "SkinLeft"
+          },
+          "x": 87,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_mini_white_right1",
+          "image": "mini_white_right.png",
+          "hoveredImage": "mini_blue_right.png",
+          "onClick": {
+            "name": "SkinRight"
+          },
+          "x": 123,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_create_your_character",
+          "text": {
+            "fixedValue": "Create your character!"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 38,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

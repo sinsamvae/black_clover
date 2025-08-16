@@ -7,6 +7,7 @@
   "entity.god.tornado": "Tornado",
   "gui.god.menu_2.label_empty": "______",
   "gui.god.menu_7.button_add": "set",
+  "gui.god.character_creation.label_create_your_character": "Create your character!",
   "gui.god.menu_7.button_empty1": "",
   "item.god.max_mana": "Max Mana",
   "gui.god.menu_2.label_stats": "Stats",
@@ -16,7 +17,9 @@
   "gui.god.menu_3.tooltip_magic": "Magic",
   "gui.god.menu_3.tooltip_race": "Race ",
   "gui.god.menu_7.button_empty": "",
+  "gui.god.character_creation.label_skin": "Skin",
   "key.god.switch_moves": "Switch Moves",
   "gui.god.menu_3.tooltip_mana_method": "Mana Method",
-  "gui.god.menu_3.tooltip_demons": "Demons"
+  "gui.god.menu_3.tooltip_demons": "Demons",
+  "gui.god.character_creation.label_eyes": "Eyes"
 }

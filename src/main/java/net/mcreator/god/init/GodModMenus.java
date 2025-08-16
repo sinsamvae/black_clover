@@ -19,6 +19,7 @@ import net.mcreator.god.world.inventory.Menu3Menu;
 import net.mcreator.god.world.inventory.Menu2Menu;
 import net.mcreator.god.world.inventory.Menu1Menu;
 import net.mcreator.god.world.inventory.KingsMenu;
+import net.mcreator.god.world.inventory.CharacterCreationMenu;
 import net.mcreator.god.GodMod;
 
 public class GodModMenus {
@@ -31,4 +32,5 @@ public class GodModMenus {
 	public static final RegistryObject<MenuType<KingsMenu>> KINGS = REGISTRY.register("kings", () -> IForgeMenuType.create(KingsMenu::new));
 	public static final RegistryObject<MenuType<Menu7Menu>> MENU_7 = REGISTRY.register("menu_7", () -> IForgeMenuType.create(Menu7Menu::new));
 	public static final RegistryObject<MenuType<RaceSelectionMenu>> RACE_SELECTION = REGISTRY.register("race_selection", () -> IForgeMenuType.create(RaceSelectionMenu::new));
+	public static final RegistryObject<MenuType<CharacterCreationMenu>> CHARACTER_CREATION = REGISTRY.register("character_creation", () -> IForgeMenuType.create(CharacterCreationMenu::new));
 }

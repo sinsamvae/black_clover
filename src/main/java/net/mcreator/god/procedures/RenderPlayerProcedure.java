@@ -96,6 +96,8 @@ public class RenderPlayerProcedure {
 				texture = "skin_5";
 			} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).skin_color == 6) {
 				texture = "skin_6";
+			} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).skin_color == 7) {
+				texture = "skin_7";
 			}
 			if (_evt.getRenderer() instanceof LivingEntityRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 				if (_evt instanceof RenderLivingEvent.Pre _pre) {

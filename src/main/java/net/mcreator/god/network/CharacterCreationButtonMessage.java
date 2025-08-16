@@ -11,41 +11,42 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.god.world.inventory.RaceSelectionMenu;
-import net.mcreator.god.procedures.RaceSelectProcedure;
-import net.mcreator.god.procedures.RaceRightProcedure;
-import net.mcreator.god.procedures.RaceLeftProcedure;
+import net.mcreator.god.world.inventory.CharacterCreationMenu;
+import net.mcreator.god.procedures.SkinRightProcedure;
+import net.mcreator.god.procedures.SkinLeftProcedure;
+import net.mcreator.god.procedures.EyesRightProcedure;
+import net.mcreator.god.procedures.EyesLeftProcedure;
 import net.mcreator.god.GodMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class RaceSelectionButtonMessage {
+public class CharacterCreationButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public RaceSelectionButtonMessage(FriendlyByteBuf buffer) {
+	public CharacterCreationButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public RaceSelectionButtonMessage(int buttonID, int x, int y, int z) {
+	public CharacterCreationButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(RaceSelectionButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(CharacterCreationButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(RaceSelectionButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(CharacterCreationButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -60,26 +61,30 @@ public class RaceSelectionButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = RaceSelectionMenu.guistate;
+		HashMap guistate = CharacterCreationMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			RaceRightProcedure.execute(entity);
+			EyesLeftProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			RaceLeftProcedure.execute(entity);
+			EyesRightProcedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
-			RaceSelectProcedure.execute(world, x, y, z, entity);
+			SkinLeftProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			SkinRightProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		GodMod.addNetworkMessage(RaceSelectionButtonMessage.class, RaceSelectionButtonMessage::buffer, RaceSelectionButtonMessage::new, RaceSelectionButtonMessage::handler);
+		GodMod.addNetworkMessage(CharacterCreationButtonMessage.class, CharacterCreationButtonMessage::buffer, CharacterCreationButtonMessage::new, CharacterCreationButtonMessage::handler);
 	}
 }
