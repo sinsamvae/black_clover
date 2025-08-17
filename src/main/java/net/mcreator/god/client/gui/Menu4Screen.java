@@ -14,17 +14,19 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.god.world.inventory.Menu4Menu;
 import net.mcreator.god.procedures.ModelProcedure;
 import net.mcreator.god.network.Menu4ButtonMessage;
+import net.mcreator.god.init.GodModScreens.WidgetScreen;
 import net.mcreator.god.GodMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class Menu4Screen extends AbstractContainerScreen<Menu4Menu> {
+public class Menu4Screen extends AbstractContainerScreen<Menu4Menu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = Menu4Menu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 	ImageButton imagebutton_blank;
 	ImageButton imagebutton_blank1;
 	ImageButton imagebutton_blank3;
@@ -78,6 +80,10 @@ public class Menu4Screen extends AbstractContainerScreen<Menu4Menu> {
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -96,40 +102,40 @@ public class Menu4Screen extends AbstractContainerScreen<Menu4Menu> {
 		super.init();
 		imagebutton_blank = new ImageButton(this.leftPos + -82, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(0, x, y, z));
-				Menu4ButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(0, x, y, z, textstate));
+				Menu4ButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank", imagebutton_blank);
 		this.addRenderableWidget(imagebutton_blank);
 		imagebutton_blank1 = new ImageButton(this.leftPos + -46, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank1.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(1, x, y, z));
-				Menu4ButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(1, x, y, z, textstate));
+				Menu4ButtonMessage.handleButtonAction(entity, 1, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank1", imagebutton_blank1);
 		this.addRenderableWidget(imagebutton_blank1);
 		imagebutton_blank3 = new ImageButton(this.leftPos + 26, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank3.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(2, x, y, z));
-				Menu4ButtonMessage.handleButtonAction(entity, 2, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(2, x, y, z, textstate));
+				Menu4ButtonMessage.handleButtonAction(entity, 2, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank3", imagebutton_blank3);
 		this.addRenderableWidget(imagebutton_blank3);
 		imagebutton_blank4 = new ImageButton(this.leftPos + -10, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank4.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(3, x, y, z));
-				Menu4ButtonMessage.handleButtonAction(entity, 3, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(3, x, y, z, textstate));
+				Menu4ButtonMessage.handleButtonAction(entity, 3, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank4", imagebutton_blank4);
 		this.addRenderableWidget(imagebutton_blank4);
 		imagebutton_blank2 = new ImageButton(this.leftPos + 62, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank2.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(4, x, y, z));
-				Menu4ButtonMessage.handleButtonAction(entity, 4, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu4ButtonMessage(4, x, y, z, textstate));
+				Menu4ButtonMessage.handleButtonAction(entity, 4, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank2", imagebutton_blank2);

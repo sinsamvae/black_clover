@@ -17,17 +17,19 @@ import net.mcreator.god.procedures.GetSecondSkillProcedure;
 import net.mcreator.god.procedures.GetFourthSkillProcedure;
 import net.mcreator.god.procedures.GetFirstSkillProcedure;
 import net.mcreator.god.network.Menu7ButtonMessage;
+import net.mcreator.god.init.GodModScreens.WidgetScreen;
 import net.mcreator.god.GodMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class Menu7Screen extends AbstractContainerScreen<Menu7Menu> {
+public class Menu7Screen extends AbstractContainerScreen<Menu7Menu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = Menu7Menu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 	ImageButton imagebutton_blank;
 	ImageButton imagebutton_blank1;
 	ImageButton imagebutton_blank3;
@@ -83,6 +85,10 @@ public class Menu7Screen extends AbstractContainerScreen<Menu7Menu> {
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -119,80 +125,80 @@ public class Menu7Screen extends AbstractContainerScreen<Menu7Menu> {
 		super.init();
 		imagebutton_blank = new ImageButton(this.leftPos + -82, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(0, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(0, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank", imagebutton_blank);
 		this.addRenderableWidget(imagebutton_blank);
 		imagebutton_blank1 = new ImageButton(this.leftPos + -46, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank1.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(1, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(1, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 1, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank1", imagebutton_blank1);
 		this.addRenderableWidget(imagebutton_blank1);
 		imagebutton_blank3 = new ImageButton(this.leftPos + 26, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank3.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(2, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 2, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(2, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 2, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank3", imagebutton_blank3);
 		this.addRenderableWidget(imagebutton_blank3);
 		imagebutton_blank4 = new ImageButton(this.leftPos + -10, this.topPos + 160, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank4.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(3, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 3, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(3, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 3, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank4", imagebutton_blank4);
 		this.addRenderableWidget(imagebutton_blank4);
 		imagebutton_blank2 = new ImageButton(this.leftPos + 64, this.topPos + 180, 20, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_blank2.png"), 20, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(4, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 4, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(4, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 4, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_blank2", imagebutton_blank2);
 		this.addRenderableWidget(imagebutton_blank2);
 		imagebutton_slotsmovebutton = new ImageButton(this.leftPos + -24, this.topPos + 134, 45, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_slotsmovebutton.png"), 45, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(5, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 5, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(5, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 5, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_slotsmovebutton", imagebutton_slotsmovebutton);
 		this.addRenderableWidget(imagebutton_slotsmovebutton);
 		imagebutton_set = new ImageButton(this.leftPos + -109, this.topPos + 25, 16, 16, 0, 0, 16, new ResourceLocation("god:textures/screens/atlas/imagebutton_set.png"), 16, 32, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(6, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 6, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(6, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 6, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_set", imagebutton_set);
 		this.addRenderableWidget(imagebutton_set);
 		imagebutton_set1 = new ImageButton(this.leftPos + -109, this.topPos + 43, 16, 16, 0, 0, 16, new ResourceLocation("god:textures/screens/atlas/imagebutton_set1.png"), 16, 32, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(7, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 7, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(7, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 7, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_set1", imagebutton_set1);
 		this.addRenderableWidget(imagebutton_set1);
 		imagebutton_set2 = new ImageButton(this.leftPos + -109, this.topPos + 61, 16, 16, 0, 0, 16, new ResourceLocation("god:textures/screens/atlas/imagebutton_set2.png"), 16, 32, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(8, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 8, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(8, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 8, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_set2", imagebutton_set2);
 		this.addRenderableWidget(imagebutton_set2);
 		imagebutton_set3 = new ImageButton(this.leftPos + -109, this.topPos + 79, 16, 16, 0, 0, 16, new ResourceLocation("god:textures/screens/atlas/imagebutton_set3.png"), 16, 32, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(9, x, y, z));
-				Menu7ButtonMessage.handleButtonAction(entity, 9, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(9, x, y, z, textstate));
+				Menu7ButtonMessage.handleButtonAction(entity, 9, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_set3", imagebutton_set3);

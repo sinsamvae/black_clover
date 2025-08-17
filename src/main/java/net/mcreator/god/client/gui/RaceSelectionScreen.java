@@ -21,17 +21,19 @@ import net.mcreator.god.procedures.ReturnDwarfProcedure;
 import net.mcreator.god.procedures.ReturnDevilProcedure;
 import net.mcreator.god.procedures.Line3Procedure;
 import net.mcreator.god.network.RaceSelectionButtonMessage;
+import net.mcreator.god.init.GodModScreens.WidgetScreen;
 import net.mcreator.god.GodMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class RaceSelectionScreen extends AbstractContainerScreen<RaceSelectionMenu> {
+public class RaceSelectionScreen extends AbstractContainerScreen<RaceSelectionMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = RaceSelectionMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 	ImageButton imagebutton_fleche_blanche_droite_1;
 	ImageButton imagebutton_fleche_bleue_gauche_1;
 	ImageButton imagebutton_slotsmovebutton;
@@ -86,6 +88,10 @@ public class RaceSelectionScreen extends AbstractContainerScreen<RaceSelectionMe
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -117,24 +123,24 @@ public class RaceSelectionScreen extends AbstractContainerScreen<RaceSelectionMe
 		super.init();
 		imagebutton_fleche_blanche_droite_1 = new ImageButton(this.leftPos + 62, this.topPos + -2, 32, 32, 0, 0, 32, new ResourceLocation("god:textures/screens/atlas/imagebutton_fleche_blanche_droite_1.png"), 32, 64, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new RaceSelectionButtonMessage(0, x, y, z));
-				RaceSelectionButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new RaceSelectionButtonMessage(0, x, y, z, textstate));
+				RaceSelectionButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_fleche_blanche_droite_1", imagebutton_fleche_blanche_droite_1);
 		this.addRenderableWidget(imagebutton_fleche_blanche_droite_1);
 		imagebutton_fleche_bleue_gauche_1 = new ImageButton(this.leftPos + -82, this.topPos + -2, 32, 32, 0, 0, 32, new ResourceLocation("god:textures/screens/atlas/imagebutton_fleche_bleue_gauche_1.png"), 32, 64, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new RaceSelectionButtonMessage(1, x, y, z));
-				RaceSelectionButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new RaceSelectionButtonMessage(1, x, y, z, textstate));
+				RaceSelectionButtonMessage.handleButtonAction(entity, 1, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_fleche_bleue_gauche_1", imagebutton_fleche_bleue_gauche_1);
 		this.addRenderableWidget(imagebutton_fleche_bleue_gauche_1);
 		imagebutton_slotsmovebutton = new ImageButton(this.leftPos + -16, this.topPos + 151, 45, 20, 0, 0, 20, new ResourceLocation("god:textures/screens/atlas/imagebutton_slotsmovebutton.png"), 45, 40, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new RaceSelectionButtonMessage(2, x, y, z));
-				RaceSelectionButtonMessage.handleButtonAction(entity, 2, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new RaceSelectionButtonMessage(2, x, y, z, textstate));
+				RaceSelectionButtonMessage.handleButtonAction(entity, 2, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_slotsmovebutton", imagebutton_slotsmovebutton);

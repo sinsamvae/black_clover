@@ -8,49 +8,9 @@ public class EyesRightProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color == 1) {
+		if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color < 6) {
 			{
-				double _setval = 2;
-				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.eye_color = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color == 2) {
-			{
-				double _setval = 3;
-				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.eye_color = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color == 3) {
-			{
-				double _setval = 4;
-				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.eye_color = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color == 4) {
-			{
-				double _setval = 5;
-				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.eye_color = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color == 5) {
-			{
-				double _setval = 6;
-				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.eye_color = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color == 6) {
-			{
-				double _setval = 1;
+				double _setval = (entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).eye_color + 1;
 				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.eye_color = _setval;
 					capability.syncPlayerVariables(entity);
