@@ -17,7 +17,7 @@ import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.god.network.GodModVariables;
-import net.mcreator.god.client.model.Modelelf;
+import net.mcreator.god.client.model.ModelElf;
 
 import javax.annotation.Nullable;
 
@@ -119,7 +119,7 @@ public class RenderPlayerProcedure {
 				if (ResourceLocation.tryParse(("god:textures/entities/" + texture + ".png")) != null) {
 					_texture = new ResourceLocation(("god:textures/entities/" + texture + ".png"));
 				}
-				Modelelf newModel = new Modelelf(context.bakeLayer(Modelelf.LAYER_LOCATION));
+				ModelElf newModel = new ModelElf(context.bakeLayer(ModelElf.LAYER_LOCATION));
 				newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
 				newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
 				newModel.LeftArm.copyFrom(_pr.getModel().leftArm);

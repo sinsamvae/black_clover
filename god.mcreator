@@ -8,9 +8,9 @@
       "registry_name": "menu_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/network/Menu1ButtonMessage.java",
           "src/main/java/net/mcreator/god/world/inventory/Menu1Menu.java",
-          "src/main/java/net/mcreator/god/client/gui/Menu1Screen.java"
+          "src/main/java/net/mcreator/god/client/gui/Menu1Screen.java",
+          "src/main/java/net/mcreator/god/network/Menu1ButtonMessage.java"
         ]
       },
       "path": "~/Menu"
@@ -521,8 +521,8 @@
       "registry_name": "level_up_particles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/god/particles/level_up_particles.json",
-          "src/main/java/net/mcreator/god/client/particle/LevelUpParticlesParticle.java"
+          "src/main/java/net/mcreator/god/client/particle/LevelUpParticlesParticle.java",
+          "src/main/resources/assets/god/particles/level_up_particles.json"
         ]
       },
       "path": "~/Stats"
@@ -640,9 +640,9 @@
       "registry_name": "menu_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/world/inventory/Menu2Menu.java",
           "src/main/java/net/mcreator/god/client/gui/Menu2Screen.java",
-          "src/main/java/net/mcreator/god/network/Menu2ButtonMessage.java"
+          "src/main/java/net/mcreator/god/network/Menu2ButtonMessage.java",
+          "src/main/java/net/mcreator/god/world/inventory/Menu2Menu.java"
         ]
       },
       "path": "~/Menu"
@@ -670,8 +670,8 @@
       "registry_name": "menu_4",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/network/Menu4ButtonMessage.java",
           "src/main/java/net/mcreator/god/client/gui/Menu4Screen.java",
+          "src/main/java/net/mcreator/god/network/Menu4ButtonMessage.java",
           "src/main/java/net/mcreator/god/world/inventory/Menu4Menu.java"
         ]
       },
@@ -685,8 +685,8 @@
       "registry_name": "menu_5",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/client/gui/Menu5Screen.java",
           "src/main/java/net/mcreator/god/world/inventory/Menu5Menu.java",
+          "src/main/java/net/mcreator/god/client/gui/Menu5Screen.java",
           "src/main/java/net/mcreator/god/network/Menu5ButtonMessage.java"
         ]
       },
@@ -970,8 +970,8 @@
       "registry_name": "menu_7",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/world/inventory/Menu7Menu.java",
           "src/main/java/net/mcreator/god/client/gui/Menu7Screen.java",
+          "src/main/java/net/mcreator/god/world/inventory/Menu7Menu.java",
           "src/main/java/net/mcreator/god/network/Menu7ButtonMessage.java"
         ]
       },

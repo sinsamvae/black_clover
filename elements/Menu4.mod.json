@@ -141,57 +141,6 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_name",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnName"
-          },
-          "color": {
-            "value": -13421773,
-            "falpha": 0.0
-          },
-          "x": 105,
-          "y": 44,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_level",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnLevel"
-          },
-          "color": {
-            "value": -13421773,
-            "falpha": 0.0
-          },
-          "x": 105,
-          "y": 80,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_race",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnRace"
-          },
-          "color": {
-            "value": -13421773,
-            "falpha": 0.0
-          },
-          "x": 105,
-          "y": 62,
-          "locked": false
-        }
-      },
-      {
         "type": "entitymodel",
         "data": {
           "entityModel": {
@@ -202,40 +151,6 @@
           "followMouseMovement": false,
           "x": 270,
           "y": 140,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_status",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnStatus"
-          },
-          "color": {
-            "value": -13421773,
-            "falpha": 0.0
-          },
-          "x": 105,
-          "y": 116,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_xp",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnXP"
-          },
-          "color": {
-            "value": -13421773,
-            "falpha": 0.0
-          },
-          "x": 105,
-          "y": 98,
           "locked": false
         }
       },

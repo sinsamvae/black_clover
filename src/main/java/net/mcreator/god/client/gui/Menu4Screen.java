@@ -12,11 +12,6 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.god.world.inventory.Menu4Menu;
-import net.mcreator.god.procedures.ReturnXPProcedure;
-import net.mcreator.god.procedures.ReturnStatusProcedure;
-import net.mcreator.god.procedures.ReturnRaceProcedure;
-import net.mcreator.god.procedures.ReturnNameProcedure;
-import net.mcreator.god.procedures.ReturnLevelProcedure;
 import net.mcreator.god.procedures.ModelProcedure;
 import net.mcreator.god.network.Menu4ButtonMessage;
 import net.mcreator.god.GodMod;
@@ -94,21 +89,6 @@ public class Menu4Screen extends AbstractContainerScreen<Menu4Menu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font,
-
-				ReturnNameProcedure.execute(entity), -109, 7, -13421773, false);
-		guiGraphics.drawString(this.font,
-
-				ReturnLevelProcedure.execute(entity), -109, 43, -13421773, false);
-		guiGraphics.drawString(this.font,
-
-				ReturnRaceProcedure.execute(entity), -109, 25, -13421773, false);
-		guiGraphics.drawString(this.font,
-
-				ReturnStatusProcedure.execute(entity), -109, 79, -13421773, false);
-		guiGraphics.drawString(this.font,
-
-				ReturnXPProcedure.execute(entity), -109, 61, -13421773, false);
 	}
 
 	@Override

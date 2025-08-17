@@ -1,5 +1,8 @@
 package net.mcreator.god.procedures;
 
+import virtuoel.pehkui.api.ScaleTypes;
+import virtuoel.pehkui.api.ScaleOperations;
+
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -46,6 +49,8 @@ public class RaceSelectProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			ScaleTypes.HEIGHT.getScaleData(entity).setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.HEIGHT.getScaleData(entity).getTargetScale(), 1));
+			ScaleTypes.WIDTH.getScaleData(entity).setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.WIDTH.getScaleData(entity).getTargetScale(), 0.8));
 		} else if ((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).race_count == 4) {
 			{
 				String _setval = "Witch";
@@ -89,6 +94,8 @@ public class RaceSelectProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			ScaleTypes.WIDTH.getScaleData(entity).setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.WIDTH.getScaleData(entity).getTargetScale(), 0.8));
+			ScaleTypes.HEIGHT.getScaleData(entity).setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.HEIGHT.getScaleData(entity).getTargetScale(), 1));
 		} else if (((entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).race).equals("Witch")) {
 			{
 				double _setval = 4;

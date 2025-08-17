@@ -12,10 +12,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.god.client.model.Modelkamichigiri;
 import net.mcreator.god.client.model.Modelgrimoire_holder;
 import net.mcreator.god.client.model.Modelgrimoire;
-import net.mcreator.god.client.model.Modelelf;
 import net.mcreator.god.client.model.Modelblade;
 import net.mcreator.god.client.model.ModelLAME_Converted;
 import net.mcreator.god.client.model.ModelHellFire5;
+import net.mcreator.god.client.model.ModelElf;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class GodModModels {
@@ -27,6 +27,6 @@ public class GodModModels {
 		event.registerLayerDefinition(Modelkamichigiri.LAYER_LOCATION, Modelkamichigiri::createBodyLayer);
 		event.registerLayerDefinition(Modelblade.LAYER_LOCATION, Modelblade::createBodyLayer);
 		event.registerLayerDefinition(Modelgrimoire.LAYER_LOCATION, Modelgrimoire::createBodyLayer);
-		event.registerLayerDefinition(Modelelf.LAYER_LOCATION, Modelelf::createBodyLayer);
+		event.registerLayerDefinition(ModelElf.LAYER_LOCATION, ModelElf::createBodyLayer);
 	}
 }
