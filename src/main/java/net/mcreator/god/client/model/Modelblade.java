@@ -33,7 +33,7 @@ public class Modelblade<T extends Entity> extends EntityModel<T> {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition group = partdefinition.addOrReplaceChild("group",
 				CubeListBuilder.create().texOffs(4, 1).addBox(0.0F, -13.4F, 1.4F, 0.8F, 1.9F, 0.2F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-0.6F, -11.6F, 1.4F, 2.0F, 9.2F, 0.2F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 16.0F, -0.9F));
+				PartPose.offsetAndRotation(1.0F, 1.0F, -1.9F, 0.0F, 0.0F, -3.1416F));
 		PartDefinition cube_r1 = group.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(4, 0).addBox(-2.29F, -8.9F, 0.0F, 1.49F, 1.4F, 0.2F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(7.1446F, 2.5473F, 1.4F, 0.0F, 0.0F, -0.7505F));
 		PartDefinition cube_r2 = group.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 0).addBox(1.3F, -1.0F, 0.0F, 0.2F, 1.0F, 0.2F, new CubeDeformation(0.0F)),
