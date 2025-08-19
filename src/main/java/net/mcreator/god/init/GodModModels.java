@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.god.client.model.Modelkamichigiri;
 import net.mcreator.god.client.model.Modelgrimoire_holder;
 import net.mcreator.god.client.model.Modelgrimoire;
+import net.mcreator.god.client.model.Modelbroom;
 import net.mcreator.god.client.model.Modelblade;
 import net.mcreator.god.client.model.ModelLAME_Converted;
 import net.mcreator.god.client.model.ModelHellFire5;
