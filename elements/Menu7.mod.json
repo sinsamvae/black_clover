@@ -210,8 +210,8 @@
             "value": -13421773,
             "falpha": 0.0
           },
-          "x": 124,
-          "y": 65,
+          "x": 123,
+          "y": 71,
           "locked": false
         }
       },
@@ -227,8 +227,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 124,
-          "y": 83,
+          "x": 123,
+          "y": 101,
           "locked": false
         }
       },
@@ -242,7 +242,7 @@
             "name": "SetSkill"
           },
           "x": 105,
-          "y": 62,
+          "y": 68,
           "locked": false
         }
       },
@@ -256,7 +256,7 @@
             "name": "SetSecondSkill"
           },
           "x": 105,
-          "y": 80,
+          "y": 98,
           "locked": false
         }
       },
@@ -270,7 +270,7 @@
             "name": "SetThirdSkill"
           },
           "x": 105,
-          "y": 98,
+          "y": 128,
           "locked": false
         }
       },
@@ -287,7 +287,7 @@
             "falpha": 0.0
           },
           "x": 123,
-          "y": 99,
+          "y": 131,
           "locked": false
         }
       },
@@ -301,7 +301,7 @@
             "name": "SetFourthSkill"
           },
           "x": 105,
-          "y": 116,
+          "y": 158,
           "locked": false
         }
       },
@@ -318,14 +318,14 @@
             "falpha": 0.0
           },
           "x": 123,
-          "y": 116,
+          "y": 161,
           "locked": false
         }
       }
     ],
     "gridSettings": {
       "sx": 18,
-      "sy": 18,
+      "sy": 6,
       "ox": 11,
       "oy": 15,
       "snapOnGrid": true

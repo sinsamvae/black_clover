@@ -2307,6 +2307,15 @@
           {
             "name": "Wind",
             "children": []
+          },
+          {
+            "name": "Race",
+            "children": [
+              {
+                "name": "Human",
+                "children": []
+              }
+            ]
           }
         ]
       },

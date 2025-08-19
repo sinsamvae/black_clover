@@ -28,5 +28,6 @@ public class GodModModels {
 		event.registerLayerDefinition(Modelblade.LAYER_LOCATION, Modelblade::createBodyLayer);
 		event.registerLayerDefinition(Modelgrimoire.LAYER_LOCATION, Modelgrimoire::createBodyLayer);
 		event.registerLayerDefinition(ModelElf.LAYER_LOCATION, ModelElf::createBodyLayer);
+		event.registerLayerDefinition(Modelbroom.LAYER_LOCATION, Modelbroom::createBodyLayer);
 	}
 }
