@@ -21,7 +21,6 @@ import net.mcreator.god.init.GodModParticleTypes;
 import net.mcreator.god.init.GodModMenus;
 import net.mcreator.god.init.GodModItems;
 import net.mcreator.god.init.GodModEntities;
-import net.mcreator.god.init.GodModAttributes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -49,7 +48,7 @@ public class GodMod {
 		GodModParticleTypes.REGISTRY.register(bus);
 
 		GodModMenus.REGISTRY.register(bus);
-		GodModAttributes.REGISTRY.register(bus);
+
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

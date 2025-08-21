@@ -1,0 +1,10 @@
+{
+  "_fv": 73,
+  "_type": "command",
+  "definition": {
+    "commandName": "black_clover",
+    "type": "STANDARD",
+    "permissionLevel": "1",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"entity\"><field name=\"name\">Player</field><field name=\"type\">players</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">add</field><statement name=\"args\"><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">stat</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">number</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">StatCommand</field></block></statement></block></statement></block></statement></block></statement></block></next></block></xml>"
+  }
+}

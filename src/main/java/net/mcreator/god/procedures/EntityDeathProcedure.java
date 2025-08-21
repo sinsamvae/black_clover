@@ -9,12 +9,10 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 
 import net.mcreator.god.network.GodModVariables;
-import net.mcreator.god.init.GodModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -44,8 +42,7 @@ public class EntityDeathProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Player && entityiterator == (damagesource.getEntity()) && !(entityiterator == entity)) {
 						{
-							double _setval = (entityiterator.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).xp + Math.round(
-									(entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(GodModAttributes.LEVEL.get()) ? _livingEntity8.getAttribute(GodModAttributes.LEVEL.get()).getBaseValue() : 0) * 2) + 1;
+							double _setval = (entityiterator.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).xp + Math.round(entity.getPersistentData().getDouble("level") * 2) + 1;
 							entityiterator.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.xp = _setval;
 								capability.syncPlayerVariables(entityiterator);

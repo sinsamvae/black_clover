@@ -39,5 +39,12 @@ public class RespawnProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			double _setval = (entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).MaxHealth;
+			entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.Health = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

@@ -441,12 +441,7 @@
         "files": [
           "src/main/java/net/mcreator/god/procedures/GEtsProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Stats"
     },
@@ -461,17 +456,6 @@
           "src/main/java/net/mcreator/god/procedures/RbarProcedure.java"
         ],
         "dependencies": []
-      },
-      "path": "~/Stats"
-    },
-    {
-      "name": "Level",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level",
-      "metadata": {
-        "files": []
       },
       "path": "~/Stats"
     },
@@ -2028,6 +2012,146 @@
         ]
       },
       "path": "~/CharCreation"
+    },
+    {
+      "name": "PlayerUpdateTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/PlayerUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Entityhurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entityhurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/EntityhurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "EntityAttacked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_attacked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/EntityAttackedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Knockback",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knockback",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/KnockbackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "target",
+            "type": "entity"
+          },
+          {
+            "name": "user",
+            "type": "entity"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "VanillaOverlayHider",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vanilla_overlay_hider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/VanillaOverlayHider.java"
+        ]
+      }
+    },
+    {
+      "name": "BlackClover",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_clover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/command/BlackCloverCommand.java"
+        ]
+      },
+      "path": "~/Command"
+    },
+    {
+      "name": "StatCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/StatCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Command"
     }
   ],
   "variable_elements": [
@@ -2041,7 +2165,7 @@
       "name": "mana",
       "type": "number",
       "scope": "player_persistent",
-      "value": "100.0"
+      "value": "0.0"
     },
     {
       "name": "maxmana",
@@ -2053,7 +2177,7 @@
       "name": "endurance",
       "type": "number",
       "scope": "player_persistent",
-      "value": "100.0"
+      "value": "0.0"
     },
     {
       "name": "maxendurance",
@@ -2083,7 +2207,7 @@
       "name": "level",
       "type": "number",
       "scope": "player_persistent",
-      "value": "50.0"
+      "value": "1.0"
     },
     {
       "name": "status",
@@ -2095,7 +2219,7 @@
       "name": "xp",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "strenght",
@@ -2107,7 +2231,7 @@
       "name": "SP",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "Health",
@@ -2119,7 +2243,7 @@
       "name": "MaxHealth",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "intel",
@@ -2150,18 +2274,6 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
-    },
-    {
-      "name": "skilllist",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
-    },
-    {
-      "name": "magicskillcount",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0.0"
     },
     {
       "name": "raceboostgiven",
@@ -2258,6 +2370,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "1.0"
+    },
+    {
+      "name": "defense",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -2269,7 +2387,6 @@
       "gui.god.kings.button_select": "SELECT!",
       "key.god.execute": "Execute",
       "gui.god.menu_3.tooltip_spirits": "Spirits",
-      "attribute.god.level": "Level",
       "entity.god.tornado": "Tornado",
       "gui.god.menu_2.label_empty": "______",
       "gui.god.menu_7.button_add": "set",
@@ -2325,6 +2442,10 @@
       },
       {
         "name": "CharCreation",
+        "children": []
+      },
+      {
+        "name": "Command",
         "children": []
       }
     ]
