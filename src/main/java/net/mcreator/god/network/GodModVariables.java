@@ -169,7 +169,7 @@ public class GodModVariables {
 		public double strenght = 0;
 		public double SP = 0.0;
 		public double Health = 0;
-		public double MaxHealth = 0.0;
+		public double MaxHealth = 20.0;
 		public double intel = 1.0;
 		public double SELECT = 1.0;
 		public double move = 1.0;
@@ -191,7 +191,7 @@ public class GodModVariables {
 		public double hair_color = 1.0;
 		public double race_count = 1.0;
 		public double grimoire_holder = 1.0;
-		public double defense = 0;
+		public double defense = 50.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)

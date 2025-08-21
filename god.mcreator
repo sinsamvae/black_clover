@@ -8,9 +8,9 @@
       "registry_name": "menu_1",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/god/network/Menu1ButtonMessage.java",
           "src/main/java/net/mcreator/god/world/inventory/Menu1Menu.java",
-          "src/main/java/net/mcreator/god/client/gui/Menu1Screen.java",
-          "src/main/java/net/mcreator/god/network/Menu1ButtonMessage.java"
+          "src/main/java/net/mcreator/god/client/gui/Menu1Screen.java"
         ]
       },
       "path": "~/Menu"
@@ -432,20 +432,6 @@
       "path": "~/Stats"
     },
     {
-      "name": "GEts",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "g_ets",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/god/procedures/GEtsProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Stats"
-    },
-    {
       "name": "Rbar",
       "type": "procedure",
       "compiles": true,
@@ -639,9 +625,9 @@
       "registry_name": "menu_3",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/god/network/Menu3ButtonMessage.java",
           "src/main/java/net/mcreator/god/world/inventory/Menu3Menu.java",
-          "src/main/java/net/mcreator/god/client/gui/Menu3Screen.java",
-          "src/main/java/net/mcreator/god/network/Menu3ButtonMessage.java"
+          "src/main/java/net/mcreator/god/client/gui/Menu3Screen.java"
         ]
       },
       "path": "~/Menu"
@@ -670,8 +656,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/god/world/inventory/Menu5Menu.java",
-          "src/main/java/net/mcreator/god/client/gui/Menu5Screen.java",
-          "src/main/java/net/mcreator/god/network/Menu5ButtonMessage.java"
+          "src/main/java/net/mcreator/god/network/Menu5ButtonMessage.java",
+          "src/main/java/net/mcreator/god/client/gui/Menu5Screen.java"
         ]
       },
       "path": "~/Menu"
@@ -704,9 +690,9 @@
       "registry_name": "kings",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/network/KingsButtonMessage.java",
           "src/main/java/net/mcreator/god/world/inventory/KingsMenu.java",
-          "src/main/java/net/mcreator/god/client/gui/KingsScreen.java"
+          "src/main/java/net/mcreator/god/client/gui/KingsScreen.java",
+          "src/main/java/net/mcreator/god/network/KingsButtonMessage.java"
         ]
       },
       "path": "~/Menu"
@@ -1058,8 +1044,8 @@
       "registry_name": "wind_slash",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/client/renderer/WindSlashRenderer.java",
-          "src/main/java/net/mcreator/god/entity/WindSlashEntity.java"
+          "src/main/java/net/mcreator/god/entity/WindSlashEntity.java",
+          "src/main/java/net/mcreator/god/client/renderer/WindSlashRenderer.java"
         ]
       },
       "path": "~/Skills/Wind"
@@ -1408,9 +1394,9 @@
       "registry_name": "tornado",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/god/entity/model/TornadoModel.java",
           "src/main/java/net/mcreator/god/entity/TornadoEntity.java",
-          "src/main/java/net/mcreator/god/client/renderer/TornadoRenderer.java",
-          "src/main/java/net/mcreator/god/entity/model/TornadoModel.java"
+          "src/main/java/net/mcreator/god/client/renderer/TornadoRenderer.java"
         ]
       },
       "path": "~/Skills/Wind"
@@ -1497,8 +1483,8 @@
       "registry_name": "wind_blade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/client/renderer/WindBladeRenderer.java",
-          "src/main/java/net/mcreator/god/entity/WindBladeEntity.java"
+          "src/main/java/net/mcreator/god/entity/WindBladeEntity.java",
+          "src/main/java/net/mcreator/god/client/renderer/WindBladeRenderer.java"
         ]
       },
       "path": "~/Skills/Wind"
@@ -1569,8 +1555,8 @@
       "registry_name": "max_mana",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/item/MaxManaItem.java",
-          "src/main/resources/assets/god/models/item/max_mana.json"
+          "src/main/resources/assets/god/models/item/max_mana.json",
+          "src/main/java/net/mcreator/god/item/MaxManaItem.java"
         ]
       },
       "path": "~/Items"
@@ -1675,8 +1661,8 @@
       "registry_name": "race_selection",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/network/RaceSelectionButtonMessage.java",
           "src/main/java/net/mcreator/god/client/gui/RaceSelectionScreen.java",
+          "src/main/java/net/mcreator/god/network/RaceSelectionButtonMessage.java",
           "src/main/java/net/mcreator/god/world/inventory/RaceSelectionMenu.java"
         ]
       },
@@ -1948,8 +1934,8 @@
       "registry_name": "character_creation",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/client/gui/CharacterCreationScreen.java",
           "src/main/java/net/mcreator/god/network/CharacterCreationButtonMessage.java",
+          "src/main/java/net/mcreator/god/client/gui/CharacterCreationScreen.java",
           "src/main/java/net/mcreator/god/world/inventory/CharacterCreationMenu.java"
         ]
       },
@@ -2243,7 +2229,7 @@
       "name": "MaxHealth",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "20.0"
     },
     {
       "name": "intel",
@@ -2375,7 +2361,7 @@
       "name": "defense",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "50.0"
     }
   ],
   "sound_elements": [],
