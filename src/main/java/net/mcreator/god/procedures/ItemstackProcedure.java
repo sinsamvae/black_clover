@@ -52,6 +52,20 @@ public class ItemstackProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = 10;
+				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.strenght = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = 50;
+				entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.defense = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			if (ODDS < 8) {
 				{
 					String _setval = "Peasant";

@@ -441,7 +441,12 @@
         "files": [
           "src/main/java/net/mcreator/god/procedures/GEtsProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Stats"
     },
@@ -2014,45 +2019,6 @@
       "path": "~/CharCreation"
     },
     {
-      "name": "SetFifthSkill",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_fifth_skill",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/god/procedures/SetFifthSkillProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Skills"
-    },
-    {
-      "name": "GetFifthSkill",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_fifth_skill",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/god/procedures/GetFifthSkillProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Skills"
-    },
-    {
       "name": "VanillaOverlayHider",
       "type": "code",
       "compiles": true,
@@ -2075,6 +2041,10 @@
           "src/main/java/net/mcreator/god/procedures/EntityhurtProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "amount",
             "type": "number"
@@ -2179,7 +2149,12 @@
         "files": [
           "src/main/java/net/mcreator/god/procedures/PlayerUpdateTickProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Stats"
     }

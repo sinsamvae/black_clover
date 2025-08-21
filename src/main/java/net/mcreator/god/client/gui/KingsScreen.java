@@ -16,17 +16,19 @@ import net.mcreator.god.procedures.KINGHProcedure;
 import net.mcreator.god.procedures.KINGDProcedure;
 import net.mcreator.god.procedures.KINGCProcedure;
 import net.mcreator.god.network.KingsButtonMessage;
+import net.mcreator.god.init.GodModScreens.WidgetScreen;
 import net.mcreator.god.GodMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class KingsScreen extends AbstractContainerScreen<KingsMenu> {
+public class KingsScreen extends AbstractContainerScreen<KingsMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = KingsMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 	Button button_select;
 	ImageButton imagebutton_new_piskel_10;
 	ImageButton imagebutton_new_piskel_11;
@@ -75,6 +77,10 @@ public class KingsScreen extends AbstractContainerScreen<KingsMenu> {
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -93,24 +99,24 @@ public class KingsScreen extends AbstractContainerScreen<KingsMenu> {
 		super.init();
 		button_select = Button.builder(Component.translatable("gui.god.kings.button_select"), e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new KingsButtonMessage(0, x, y, z));
-				KingsButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new KingsButtonMessage(0, x, y, z, textstate));
+				KingsButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		}).bounds(this.leftPos + -34, this.topPos + 87, 61, 20).build();
 		guistate.put("button:button_select", button_select);
 		this.addRenderableWidget(button_select);
 		imagebutton_new_piskel_10 = new ImageButton(this.leftPos + -55, this.topPos + 52, 32, 32, 0, 0, 32, new ResourceLocation("god:textures/screens/atlas/imagebutton_new_piskel_10.png"), 32, 64, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new KingsButtonMessage(1, x, y, z));
-				KingsButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new KingsButtonMessage(1, x, y, z, textstate));
+				KingsButtonMessage.handleButtonAction(entity, 1, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_new_piskel_10", imagebutton_new_piskel_10);
 		this.addRenderableWidget(imagebutton_new_piskel_10);
 		imagebutton_new_piskel_11 = new ImageButton(this.leftPos + 17, this.topPos + 52, 32, 32, 0, 0, 32, new ResourceLocation("god:textures/screens/atlas/imagebutton_new_piskel_11.png"), 32, 64, e -> {
 			if (true) {
-				GodMod.PACKET_HANDLER.sendToServer(new KingsButtonMessage(2, x, y, z));
-				KingsButtonMessage.handleButtonAction(entity, 2, x, y, z);
+				GodMod.PACKET_HANDLER.sendToServer(new KingsButtonMessage(2, x, y, z, textstate));
+				KingsButtonMessage.handleButtonAction(entity, 2, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_new_piskel_11", imagebutton_new_piskel_11);

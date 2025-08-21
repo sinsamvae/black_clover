@@ -13,12 +13,13 @@ import net.minecraftforge.client.event.RenderGuiEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.entity.ItemRenderer;
@@ -404,25 +405,32 @@ public class RhealthProcedure {
 		double maxendurance = 0;
 		double q3 = 0;
 		if (target(2)) {
-			Player player = Minecraft.getInstance().player;
-			health = player.getHealth();
-			maximumhealth = (player.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).MaxHealth;
-			gp = (player.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).mana;
-			maxgp = (player.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).maxmana;
-			endurance = (player.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).endurance;
-			maxendurance = (player.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).maxendurance;
-			q = (100 * health) / maximumhealth;
-			q2 = (100 * gp) / maxgp;
-			q3 = (100 * endurance) / maxendurance;
-			renderRectangle(30, 15, (float) (30 + 100 * (health / maximumhealth)), 23, 1, 255 << 24 | 0 << 16 | 200 << 8 | 0);
-			renderRectangle(30, 19, (float) (30 + 100 * (health / maximumhealth)), 23, 1, 255 << 24 | 0 << 16 | 153 << 8 | 0);
-			renderRectangle(30, 27, (float) (30 + 100 * (gp / maxgp)), 35, 1, 255 << 24 | 94 << 16 | 200 << 8 | 250);
-			renderRectangle(30, 31, (float) (30 + 100 * (gp / maxgp)), 35, 1, 255 << 24 | 94 << 16 | 138 << 8 | 250);
-			renderRectangle(30, 8, (float) (30 + 100 * (endurance / maxendurance)), (float) 10.5, 1, 255 << 24 | 241 << 16 | 235 << 8 | 1);
-			renderRectangle(30, (float) 10.5, (float) (30 + 100 * (endurance / maxendurance)), 13, 1, 255 << 24 | 241 << 16 | 200 << 8 | 50);
-			renderTexts((new java.text.DecimalFormat("##").format(q) + "%"), 68, 16, 0, 0, 1, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
-			renderTexts((new java.text.DecimalFormat("##").format(q2) + "%"), 68, 28, 0, 0, 1, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
-			renderTexts((new java.text.DecimalFormat("##").format(q3) + "%"), 74, (float) 9.5, 0, 0, (float) 0.5, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
+			if (Minecraft.getInstance().player != null) {
+				Entity entity = Minecraft.getInstance().player;
+				double x = entity.getX();
+				double y = entity.getY();
+				double z = entity.getZ();
+				LevelAccessor world = entity.level();
+				ResourceKey<Level> dimension = entity.level().dimension();
+				health = entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1;
+				maximumhealth = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
+				gp = (entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).mana;
+				maxgp = (entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).maxmana;
+				endurance = (entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).endurance;
+				maxendurance = (entity.getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).maxendurance;
+				q = (100 * health) / maximumhealth;
+				q2 = (100 * gp) / maxgp;
+				q3 = (100 * endurance) / maxendurance;
+				renderRectangle(30, 15, (float) (30 + 100 * (health / maximumhealth)), 23, 1, 255 << 24 | 0 << 16 | 200 << 8 | 0);
+				renderRectangle(30, 19, (float) (30 + 100 * (health / maximumhealth)), 23, 1, 255 << 24 | 0 << 16 | 153 << 8 | 0);
+				renderRectangle(30, 27, (float) (30 + 100 * (gp / maxgp)), 35, 1, 255 << 24 | 94 << 16 | 200 << 8 | 250);
+				renderRectangle(30, 31, (float) (30 + 100 * (gp / maxgp)), 35, 1, 255 << 24 | 94 << 16 | 138 << 8 | 250);
+				renderRectangle(30, 8, (float) (30 + 100 * (endurance / maxendurance)), (float) 10.5, 1, 255 << 24 | 241 << 16 | 235 << 8 | 1);
+				renderRectangle(30, (float) 10.5, (float) (30 + 100 * (endurance / maxendurance)), 13, 1, 255 << 24 | 241 << 16 | 200 << 8 | 50);
+				renderTexts((new java.text.DecimalFormat("##").format(q) + "%"), 68, 16, 0, 0, 1, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
+				renderTexts((new java.text.DecimalFormat("##").format(q2) + "%"), 68, 28, 0, 0, 1, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
+				renderTexts((new java.text.DecimalFormat("##").format(q3) + "%"), 74, (float) 9.5, 0, 0, (float) 0.5, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
+			}
 			release();
 		}
 	}
