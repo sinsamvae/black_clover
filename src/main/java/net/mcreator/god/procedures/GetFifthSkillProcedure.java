@@ -1,8 +1,6 @@
 package net.mcreator.god.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.god.network.GodModVariables;
+import net.minecraftforge.eventbus.api.Event;
 
 public class GetFifthSkillProcedure {
 	public static String execute(Entity entity) {

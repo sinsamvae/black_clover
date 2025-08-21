@@ -9,10 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.PathfinderMob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-
-import net.mcreator.god.init.GodModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -32,14 +29,11 @@ public class SpawnProcedure {
 			return;
 		if (!(entity instanceof Player)) {
 			if (entity instanceof PathfinderMob) {
-				if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(GodModAttributes.LEVEL.get()))
-					_livingEntity2.getAttribute(GodModAttributes.LEVEL.get()).setBaseValue(1);
+				entity.getPersistentData().putDouble("level", 1);
 			} else if (entity instanceof Monster) {
-				if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(GodModAttributes.LEVEL.get()))
-					_livingEntity4.getAttribute(GodModAttributes.LEVEL.get()).setBaseValue(3);
+				entity.getPersistentData().putDouble("level", 3);
 			} else if (entity instanceof AbstractGolem) {
-				if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(GodModAttributes.LEVEL.get()))
-					_livingEntity6.getAttribute(GodModAttributes.LEVEL.get()).setBaseValue(4);
+				entity.getPersistentData().putDouble("level", 4);
 			}
 		}
 	}

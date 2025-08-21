@@ -465,17 +465,6 @@
       "path": "~/Stats"
     },
     {
-      "name": "Level",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Stats"
-    },
-    {
       "name": "Spawn",
       "type": "procedure",
       "compiles": true,
@@ -1187,7 +1176,7 @@
     {
       "name": "Execute",
       "type": "keybind",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "execute",
       "metadata": {
@@ -1213,19 +1202,7 @@
             "type": "entity"
           },
           {
-            "name": "density",
-            "type": "number"
-          },
-          {
             "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "x1",
-            "type": "number"
-          },
-          {
-            "name": "x2",
             "type": "number"
           },
           {
@@ -1233,23 +1210,7 @@
             "type": "number"
           },
           {
-            "name": "y1",
-            "type": "number"
-          },
-          {
-            "name": "y2",
-            "type": "number"
-          },
-          {
             "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "z1",
-            "type": "number"
-          },
-          {
-            "name": "z2",
             "type": "number"
           },
           {
@@ -2058,6 +2019,25 @@
       "path": "~/CharCreation"
     },
     {
+      "name": "SetFifthSkill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_fifth_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/SetFifthSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
       "name": "GetFifthSkill",
       "type": "procedure",
       "compiles": true,
@@ -2078,14 +2058,135 @@
       "path": "~/Skills"
     },
     {
-      "name": "SetFifthSkill",
+      "name": "VanillaOverlayHider",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vanilla_overlay_hider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/VanillaOverlayHider.java"
+        ]
+      }
+    },
+    {
+      "name": "Entityhurt",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "set_fifth_skill",
+      "registry_name": "entityhurt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/god/procedures/SetFifthSkillProcedure.java"
+          "src/main/java/net/mcreator/god/procedures/EntityhurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "BlackClover",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_clover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/command/BlackCloverCommand.java"
+        ]
+      },
+      "path": "~/Command"
+    },
+    {
+      "name": "StatCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/StatCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Command"
+    },
+    {
+      "name": "Knockback",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knockback",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/KnockbackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "target",
+            "type": "entity"
+          },
+          {
+            "name": "user",
+            "type": "entity"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "EntityAttacked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_attacked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/EntityAttackedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "PlayerUpdateTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/god/procedures/PlayerUpdateTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -2094,7 +2195,7 @@
           }
         ]
       },
-      "path": "~/Skills"
+      "path": "~/Stats"
     }
   ],
   "variable_elements": [
@@ -2219,18 +2320,6 @@
       "value": "false"
     },
     {
-      "name": "skilllist",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
-    },
-    {
-      "name": "magicskillcount",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0.0"
-    },
-    {
       "name": "raceboostgiven",
       "type": "logic",
       "scope": "player_persistent",
@@ -2325,6 +2414,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "1.0"
+    },
+    {
+      "name": "defense",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -2361,7 +2456,11 @@
     "name": "~",
     "children": [
       {
-        "name": "Menu",
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "CharCreation",
         "children": []
       },
       {
@@ -2372,10 +2471,6 @@
         "name": "Skills",
         "children": [
           {
-            "name": "Wind",
-            "children": []
-          },
-          {
             "name": "Race",
             "children": [
               {
@@ -2383,15 +2478,19 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Wind",
+            "children": []
           }
         ]
       },
       {
-        "name": "Items",
+        "name": "Menu",
         "children": []
       },
       {
-        "name": "CharCreation",
+        "name": "Command",
         "children": []
       }
     ]

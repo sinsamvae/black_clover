@@ -97,8 +97,6 @@ public class GodModVariables {
 			clone.move = original.move;
 			clone.abilityselect = original.abilityselect;
 			clone.joined = original.joined;
-			clone.skilllist = original.skilllist;
-			clone.magicskillcount = original.magicskillcount;
 			clone.raceboostgiven = original.raceboostgiven;
 			clone.SocialClass = original.SocialClass;
 			clone.invited_to_guild = original.invited_to_guild;
@@ -113,6 +111,7 @@ public class GodModVariables {
 			clone.hair_color = original.hair_color;
 			clone.race_count = original.race_count;
 			clone.grimoire_holder = original.grimoire_holder;
+			clone.defense = original.defense;
 			if (!event.isWasDeath()) {
 				clone.grimoire = original.grimoire;
 				clone.scroll_guild = original.scroll_guild;
@@ -176,8 +175,6 @@ public class GodModVariables {
 		public double move = 1.0;
 		public ItemStack abilityselect = ItemStack.EMPTY;
 		public boolean joined = false;
-		public String skilllist = "\"\"";
-		public double magicskillcount = 0.0;
 		public boolean raceboostgiven = false;
 		public String SocialClass = "";
 		public boolean grimoire = false;
@@ -194,6 +191,7 @@ public class GodModVariables {
 		public double hair_color = 1.0;
 		public double race_count = 1.0;
 		public double grimoire_holder = 1.0;
+		public double defense = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -222,8 +220,6 @@ public class GodModVariables {
 			nbt.putDouble("move", move);
 			nbt.put("abilityselect", abilityselect.save(new CompoundTag()));
 			nbt.putBoolean("joined", joined);
-			nbt.putString("skilllist", skilllist);
-			nbt.putDouble("magicskillcount", magicskillcount);
 			nbt.putBoolean("raceboostgiven", raceboostgiven);
 			nbt.putString("SocialClass", SocialClass);
 			nbt.putBoolean("grimoire", grimoire);
@@ -240,6 +236,7 @@ public class GodModVariables {
 			nbt.putDouble("hair_color", hair_color);
 			nbt.putDouble("race_count", race_count);
 			nbt.putDouble("grimoire_holder", grimoire_holder);
+			nbt.putDouble("defense", defense);
 			return nbt;
 		}
 
@@ -271,8 +268,6 @@ public class GodModVariables {
 			move = nbt.getDouble("move");
 			abilityselect = ItemStack.of(nbt.getCompound("abilityselect"));
 			joined = nbt.getBoolean("joined");
-			skilllist = nbt.getString("skilllist");
-			magicskillcount = nbt.getDouble("magicskillcount");
 			raceboostgiven = nbt.getBoolean("raceboostgiven");
 			SocialClass = nbt.getString("SocialClass");
 			grimoire = nbt.getBoolean("grimoire");
@@ -289,6 +284,7 @@ public class GodModVariables {
 			hair_color = nbt.getDouble("hair_color");
 			race_count = nbt.getDouble("race_count");
 			grimoire_holder = nbt.getDouble("grimoire_holder");
+			defense = nbt.getDouble("defense");
 		}
 	}
 
@@ -342,8 +338,6 @@ public class GodModVariables {
 					variables.move = message.data.move;
 					variables.abilityselect = message.data.abilityselect;
 					variables.joined = message.data.joined;
-					variables.skilllist = message.data.skilllist;
-					variables.magicskillcount = message.data.magicskillcount;
 					variables.raceboostgiven = message.data.raceboostgiven;
 					variables.SocialClass = message.data.SocialClass;
 					variables.grimoire = message.data.grimoire;
@@ -360,6 +354,7 @@ public class GodModVariables {
 					variables.hair_color = message.data.hair_color;
 					variables.race_count = message.data.race_count;
 					variables.grimoire_holder = message.data.grimoire_holder;
+					variables.defense = message.data.defense;
 				}
 			});
 			context.setPacketHandled(true);
