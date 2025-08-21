@@ -1,6 +1,15 @@
 package net.mcreator.god.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.commands.CommandSourceStack;
+
+import net.mcreator.god.network.GodModVariables;
+
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.arguments.StringArgumentType;
+import com.mojang.brigadier.arguments.DoubleArgumentType;
 
 public class StatCommandProcedure {
 	public static void execute(CommandContext<CommandSourceStack> arguments) {
@@ -185,6 +194,40 @@ public class StatCommandProcedure {
 			}
 		}
 		if ((StringArgumentType.getString(arguments, "stat")).contains("Defense") || (StringArgumentType.getString(arguments, "stat")).toLowerCase().contains("defense")) {
+			{
+				double _setval = ((new Object() {
+					public Entity getEntity() {
+						try {
+							return EntityArgument.getEntity(arguments, "Player");
+						} catch (CommandSyntaxException e) {
+							e.printStackTrace();
+							return null;
+						}
+					}
+				}.getEntity()).getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GodModVariables.PlayerVariables())).defense + DoubleArgumentType.getDouble(arguments, "number");
+				(new Object() {
+					public Entity getEntity() {
+						try {
+							return EntityArgument.getEntity(arguments, "Player");
+						} catch (CommandSyntaxException e) {
+							e.printStackTrace();
+							return null;
+						}
+					}
+				}.getEntity()).getCapability(GodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.defense = _setval;
+					capability.syncPlayerVariables((new Object() {
+						public Entity getEntity() {
+							try {
+								return EntityArgument.getEntity(arguments, "Player");
+							} catch (CommandSyntaxException e) {
+								e.printStackTrace();
+								return null;
+							}
+						}
+					}.getEntity()));
+				});
+			}
 		}
 		if ((StringArgumentType.getString(arguments, "stat")).contains("MaxMana") || (StringArgumentType.getString(arguments, "stat")).toLowerCase().contains("maxmana")) {
 			{

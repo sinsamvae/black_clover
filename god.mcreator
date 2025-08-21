@@ -441,12 +441,7 @@
         "files": [
           "src/main/java/net/mcreator/god/procedures/GEtsProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Stats"
     },
@@ -2081,10 +2076,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "amount",
             "type": "number"
           }
@@ -2188,12 +2179,7 @@
         "files": [
           "src/main/java/net/mcreator/god/procedures/PlayerUpdateTickProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Stats"
     }

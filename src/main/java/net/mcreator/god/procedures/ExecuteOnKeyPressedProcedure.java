@@ -41,7 +41,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class ExecuteOnKeyPressedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double density, double x1, double x2, double y1, double y2, double z1, double z2) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double wait = 0;
@@ -289,20 +289,6 @@ public class ExecuteOnKeyPressedProcedure {
 						capability.mana = _setval;
 						capability.syncPlayerVariables(entity);
 					});
-				}
-				distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(z2 - y1, 2) + Math.pow(z2 - z1, 2));
-				steps = distance * density;
-				Delta_X = (x2 - x1) / steps;
-				Delta_Y = (y2 - y1) / steps;
-				Delta_Z = (z2 - z1) / steps;
-				Cur_X = x1;
-				Cur_Y = y1;
-				Cur_Z = z1;
-				for (int index3 = 0; index3 < (int) (steps + 1); index3++) {
-					world.addParticle(ParticleTypes.CLOUD, Cur_X, Cur_Y, Cur_Z, 0, 0, 0);
-					Cur_X = Cur_X + Delta_X;
-					Cur_Y = Cur_Y + Delta_Y;
-					Cur_Z = Cur_Z + Delta_Z;
 				}
 			} else {
 				GodMod.LOGGER.info("Not Enough Mana!");
