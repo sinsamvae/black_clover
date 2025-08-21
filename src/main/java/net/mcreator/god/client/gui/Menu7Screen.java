@@ -16,6 +16,7 @@ import net.mcreator.god.procedures.GetThirdSkillProcedure;
 import net.mcreator.god.procedures.GetSecondSkillProcedure;
 import net.mcreator.god.procedures.GetFourthSkillProcedure;
 import net.mcreator.god.procedures.GetFirstSkillProcedure;
+import net.mcreator.god.procedures.GetFifthSkillProcedure;
 import net.mcreator.god.network.Menu7ButtonMessage;
 import net.mcreator.god.init.GodModScreens.WidgetScreen;
 import net.mcreator.god.GodMod;
@@ -40,6 +41,7 @@ public class Menu7Screen extends AbstractContainerScreen<Menu7Menu> implements W
 	ImageButton imagebutton_set1;
 	ImageButton imagebutton_set2;
 	ImageButton imagebutton_set3;
+	ImageButton imagebutton_set4;
 
 	public Menu7Screen(Menu7Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -118,6 +120,9 @@ public class Menu7Screen extends AbstractContainerScreen<Menu7Menu> implements W
 		guiGraphics.drawString(this.font,
 
 				GetFourthSkillProcedure.execute(entity), -91, 124, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				GetFifthSkillProcedure.execute(entity), 26, 34, -12829636, false);
 	}
 
 	@Override
@@ -203,5 +208,13 @@ public class Menu7Screen extends AbstractContainerScreen<Menu7Menu> implements W
 		});
 		guistate.put("button:imagebutton_set3", imagebutton_set3);
 		this.addRenderableWidget(imagebutton_set3);
+		imagebutton_set4 = new ImageButton(this.leftPos + 8, this.topPos + 31, 16, 16, 0, 0, 16, new ResourceLocation("god:textures/screens/atlas/imagebutton_set4.png"), 16, 32, e -> {
+			if (true) {
+				GodMod.PACKET_HANDLER.sendToServer(new Menu7ButtonMessage(10, x, y, z));
+				Menu7ButtonMessage.handleButtonAction(entity, 10, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_set4", imagebutton_set4);
+		this.addRenderableWidget(imagebutton_set4);
 	}
 }
