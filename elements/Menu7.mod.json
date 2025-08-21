@@ -321,6 +321,37 @@
           "y": 161,
           "locked": false
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_set4",
+          "image": "set.png",
+          "hoveredImage": "seton.png",
+          "onClick": {
+            "name": "SetFifthSkill"
+          },
+          "x": 222,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_fifth_skill",
+          "text": {
+            "fixedValue": "",
+            "name": "GetFifthSkill"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 240,
+          "y": 71,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

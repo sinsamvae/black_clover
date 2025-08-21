@@ -17,6 +17,7 @@ import net.mcreator.god.procedures.SetThirdSkillProcedure;
 import net.mcreator.god.procedures.SetSkillProcedure;
 import net.mcreator.god.procedures.SetSecondSkillProcedure;
 import net.mcreator.god.procedures.SetFourthSkillProcedure;
+import net.mcreator.god.procedures.SetFifthSkillProcedure;
 import net.mcreator.god.procedures.OpenMenuOnKeyPressedProcedure;
 import net.mcreator.god.procedures.Open5Procedure;
 import net.mcreator.god.procedures.Open4Procedure;
@@ -110,6 +111,10 @@ public class Menu7ButtonMessage {
 		if (buttonID == 9) {
 
 			SetFourthSkillProcedure.execute(entity);
+		}
+		if (buttonID == 10) {
+
+			SetFifthSkillProcedure.execute(entity);
 		}
 	}
 
